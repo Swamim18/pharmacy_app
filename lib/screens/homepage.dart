@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pharmacy_app/providers/theme_provider.dart';
+import 'package:pharmacy_app/widgets/subtitles_text.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,8 +18,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Hello World",
-              style: TextStyle(fontSize: 50, color: Colors.red)),
+          SubtitleTextWidget(label: "Hello World"),
           SwitchListTile(
               title: Text(
                   themeProvider.getIsDarkTheme ? "Dark Mode" : "Light Mode"),
