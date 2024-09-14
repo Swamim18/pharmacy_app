@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pharmacy_app/consts/theme_data.dart';
 import 'package:pharmacy_app/providers/theme_provider.dart';
-import 'package:pharmacy_app/screens/homepage.dart';
+import 'package:pharmacy_app/root_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           title: 'Pharmacy App',
           theme: Styles.themeData(
               isDarkTheme: themeProvider.getIsDarkTheme, context: context),
-          home: const HomePage(),
+          home: const RootScreen(),
         );
       }),
     );
